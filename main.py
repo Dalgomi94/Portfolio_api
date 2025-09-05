@@ -13,7 +13,7 @@ def CategoryGetList():
     return result
 
 @app.post("/get/content/list")
-def CategoryGetList():
+def ContentGetList():
     ms = MySql()
     sql = 'select * from content;'
     result = ms.execute(sql)
