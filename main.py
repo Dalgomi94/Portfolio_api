@@ -11,3 +11,11 @@ def CategoryGetList():
     result = ms.execute(sql)
     print(result)
     return result
+
+@app.post("/get/content/list")
+def CategoryGetList():
+    ms = MySql()
+    sql = 'select * from content;'
+    result = ms.execute(sql)
+    print(result)
+    return result
