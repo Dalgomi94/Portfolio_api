@@ -5,7 +5,7 @@ from config.config import Config
 
 
 class MySql:
-    def __init__(self, is_local=False):
+    def __init__(self, is_local=True):
         c = Config()
         self.config = c.get_config(db_type='MYSQL', is_local=is_local)
         self.conn = None
