@@ -7,5 +7,7 @@ app = FastAPI()
 @app.post("/get/category/list")
 def CategoryGetList():
     ms = MySql()
-    
-    return {"Hi": "World"}
+    sql = 'select * from category;'
+    result = ms.execute(sql)
+    print(result)
+    return result
